@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #1B1928;
+    color: #C0C8F2;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.section_header_text{
+    padding-left: 5px;
+}
+section .sp{
+    display: flex;
+    width: 100%;
+    height: 400px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer_div {
+    text-align: center;
+    margin: 0px auto 30px;
+}
+
+.start_button{
+    background-color: #566AED;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    width: 190px;
+    height: 33px;
+    border-radius: 4px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle {
+	position: absolute;
+	border-radius: 100vmax;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.first_circle{width: 350px;height: 350px;}
+.second_circle{width: 220px;height: 220px;background: radial-gradient(circle, #6a6b9f26 0px, #6A6B9F26 10px, #1B1928 10px, #1B1928 84px, #6a6b9f26 84px, #6A6B9F26 100px);}
+
+.text {
+	height: 100%;
+}
+.play{
+
+animation: textRotation 10s linear infinite;
+
+font-size: 30px;
+
+font-weight: 100;
+}
+.reverse{
+    
+animation: textRotation 10s linear infinite;
+    
+font-size: 19px;
+    
+font-weight: 100;
+}
+@keyframes textReverseRotation{
+to{
+    transform: rotate(-360deg);
+}
+}
+@keyframes textRotation {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.text span {
+	position: absolute;
+	/* font-size: 1.2em; */
+	/* transform-origin: 0px 140px !important; */
+}
+    
+@media only screen and (max-width: 500px) {
+    
+
+section {
+    width: 80%;
+}
+.reverse{
+    font-size: 13px;
+
+}
+.play{
+    font-size: 16px;
+}
+footer_div{
+    font-size: 12px;
+}
+  }
